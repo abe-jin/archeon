@@ -5,17 +5,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://archeon.jp'),
-  title: "Archeon（アーキオン） | あなたのビジネスの「支点」になる",
-  description: "Web制作・アプリ開発・SNS運用のArcheon。アルキメデスのように、あなたのビジネスの支点になります。",
+  metadataBase: new URL('https://archeon-seven.vercel.app'),
+  title: "Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用",
+  description: "宮城・仙台のWeb制作会社Archeon（アーキオン）。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。",
   openGraph: {
-    title: 'Archeon（アーキオン） | あなたのビジネスの「支点」になる',
-    description: 'Web制作・アプリ開発・SNS運用のArcheon。',
+    title: 'Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用',
+    description: '宮城・仙台のWeb制作会社Archeon。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。',
     locale: 'ja_JP',
     type: 'website',
+    url: 'https://archeon-seven.vercel.app',
+    siteName: 'Archeon（アーキオン）',
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用',
+    description: '宮城・仙台のWeb制作会社Archeon。Next.js + AIで高品質・スピード納品。',
   },
 };
 
