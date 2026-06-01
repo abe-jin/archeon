@@ -62,7 +62,7 @@ export default function HomePage() {
               <p className="text-slate-500 text-lg max-w-xl mx-auto">ビジネスの課題に合わせて、最適な手段を選びます。</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {[
                 {
                   icon: <Globe className="w-8 h-8" />,
@@ -85,20 +85,8 @@ export default function HomePage() {
                   colorCheck: "text-teal-500",
                   title: "アプリ開発",
                   sub: "App Development",
-                  desc: "業務を楽にするツール、サービスの入口になるアプリ。要件定義から一緒に考え、使い続けられるものを届けます。",
-                  items: ["Webアプリケーション", "LINE Bot・LINE連携", "モバイルアプリ（iOS/Android）", "業務効率化ツール"],
-                },
-                {
-                  icon: <Share2 className="w-8 h-8" />,
-                  colorBg: "bg-cyan-50",
-                  colorText: "text-cyan-700",
-                  colorBadge: "text-cyan-600",
-                  colorCard: "from-slate-50 to-white border-slate-100",
-                  colorCheck: "text-cyan-500",
-                  title: "SNS運用",
-                  sub: "Social Media",
-                  desc: "投稿だけでなく、戦略から入ります。何を発信すれば見てもらえるか、数字を見ながら改善を続けます。",
-                  items: ["X（Twitter）運用代行", "Instagram運用代行", "投稿文・画像の企画制作", "月次レポート・改善提案"],
+                  desc: "ユーザーの課題を解決するWebアプリを作ります。アイデアの段階から一緒に考え、動くものを届けます。",
+                  items: ["Webアプリケーション", "位置情報・マップ連携アプリ", "業務効率化ツール", "LINE Bot・API連携"],
                 },
               ].map((s) => (
                 <div key={s.title} className={`relative bg-gradient-to-br ${s.colorCard} border rounded-2xl p-8 hover:shadow-lg hover:border-cyan-200 transition-all duration-200 group`}>

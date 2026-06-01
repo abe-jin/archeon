@@ -58,6 +58,20 @@ const portfolioItems: PortfolioItem[] = [
     placeholderBg: "bg-gradient-to-br from-cyan-50 via-teal-50 to-cyan-100",
   },
   {
+    id: "toilet-finder",
+    title: "近くのトイレを探すアプリ",
+    industry: "生活・ユーティリティ",
+    category: "Webアプリ",
+    description:
+      "現在地から近くの公共トイレをマップ上で探せるWebアプリ。位置情報APIと地図連携で、外出先でもすぐにトイレを見つけられる。",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    period: "2026年",
+    siteUrl: "",
+    thumbnail: "",
+    placeholderText: "🚻",
+    placeholderBg: "bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100",
+  },
+  {
     id: "abe-beikoku",
     title: "有限会社阿部米穀 コーポレートサイト",
     industry: "米穀販売",
