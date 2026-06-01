@@ -86,7 +86,7 @@ export default function SeitaiDemoPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: "😞",
@@ -102,6 +102,11 @@ export default function SeitaiDemoPage() {
                 icon: "😰",
                 title: "病院に行っても「異常なし」と言われた",
                 desc: "検査では何も出ない。でも確かに痛い。そんな状態が続いている方に。",
+              },
+              {
+                icon: "😔",
+                title: "マッサージに行っても、また次の日には元に戻る",
+                desc: "その場は楽になる。でも根本が変わらないまま、また同じ場所が痛くなる。",
               },
             ].map((p) => (
               <div
@@ -144,7 +149,7 @@ export default function SeitaiDemoPage() {
                 time: "60分",
                 price: "初回 4,800円",
                 priceNote: "（通常 6,500円）",
-                desc: "骨格のゆがみをていねいに整え、全身のバランスを回復します。",
+                desc: "骨格のゆがみをていねいに確認しながら、体のバランスを整えていきます。",
                 highlight: false,
               },
               {
@@ -229,29 +234,34 @@ export default function SeitaiDemoPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">
-              Why Us
+              About
             </span>
             <h2 className="text-3xl sm:text-4xl font-black mt-3">
-              東仙台整体院が選ばれる理由
+              当院について
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 num: "01",
-                title: "国家資格を持つ施術者",
-                desc: "柔道整復師・按摩マッサージ指圧師の資格を持つスタッフのみが施術します。技術に自信があります。",
+                title: "柔道整復師・按摩マッサージ指圧師が担当",
+                desc: "施術するのは国家資格を持つスタッフのみです。経歴や資格は院内に掲示しています。",
               },
               {
                 num: "02",
-                title: "痛みの原因から調べる",
-                desc: "その日の症状を抑えるだけでなく、なぜ痛むのかを一緒に確認してから施術します。",
+                title: "なぜ痛むのか、一緒に確認します",
+                desc: "その日の症状を取るだけでなく、原因を一緒に考えてから施術に入ります。",
               },
               {
                 num: "03",
-                title: "通いやすい予約の仕組み",
-                desc: "LINE・電話・ネットで24時間予約OK。当日予約も空きがあれば対応しています。",
+                title: "LINE・電話・ネットで24時間予約できます",
+                desc: "当日の空き枠もご案内できます。まずお気軽に連絡してみてください。",
+              },
+              {
+                num: "04",
+                title: "カルテを毎回確認してから施術",
+                desc: "前回の状態を踏まえて施術します。「前より楽になってきた」を積み上げていきます。",
               },
             ].map((f) => (
               <div
