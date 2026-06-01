@@ -58,6 +58,20 @@ const portfolioItems: PortfolioItem[] = [
     placeholderBg: "bg-gradient-to-br from-cyan-50 via-teal-50 to-cyan-100",
   },
   {
+    id: "fortia-gym-lp",
+    title: "パーソナルジム LP（デモ）",
+    industry: "フィットネス・パーソナルジム",
+    category: "ランディングページ",
+    description:
+      "パーソナルジムのランディングページをHTML・Sass・バニラJavaScript・PHPでフルスクラッチ制作。お問い合わせフォームはPHPでサーバー側バリデーション・CSRF対策・メール送信まで実装。レスポンシブ・スクロールアニメーション・FAQアコーディオンに対応。",
+    techStack: ["HTML5", "Sass (SCSS)", "JavaScript", "PHP", "Vercel"],
+    period: "2026年6月",
+    siteUrl: "https://php-lp-demo.vercel.app",
+    thumbnail: "",
+    placeholderText: "F",
+    placeholderBg: "bg-gradient-to-br from-slate-100 via-zinc-50 to-slate-200",
+  },
+  {
     id: "rice-ec",
     title: "高級米ブランド ECサイト（デモ）",
     industry: "食品EC・高級品",
