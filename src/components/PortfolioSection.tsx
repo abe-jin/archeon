@@ -58,6 +58,20 @@ const portfolioItems: PortfolioItem[] = [
     placeholderBg: "bg-gradient-to-br from-cyan-50 via-teal-50 to-cyan-100",
   },
   {
+    id: "rice-ec",
+    title: "高級米ブランド ECサイト（デモ）",
+    industry: "食品EC・高級品",
+    category: "ECサイト",
+    description:
+      "高級米ブランドのECデモサイト。3Dキャンバスで湯気・米粒の浮遊を表現。カスタムカラーシステム・和紙テクスチャ・縦書きCSS・カート機能・サブスクリプション設計まで一括実装。Brutus誌×Apple美学のUI。",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Canvas API", "Vercel"],
+    period: "2026年5月",
+    siteUrl: "https://web-3d-ec-ec-brutus-apple-9k9221riz.vercel.app",
+    thumbnail: "",
+    placeholderText: "米",
+    placeholderBg: "bg-gradient-to-br from-stone-100 via-amber-50 to-stone-200",
+  },
+  {
     id: "toilet-finder",
     title: "近くのトイレを探すアプリ",
     industry: "生活・ユーティリティ",
@@ -72,12 +86,12 @@ const portfolioItems: PortfolioItem[] = [
     placeholderBg: "bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100",
   },
   {
-    id: "abe-beikoku",
-    title: "有限会社阿部米穀 コーポレートサイト",
+    id: "rice-shop-corporate",
+    title: "米穀専門店 コーポレートサイト",
     industry: "米穀販売",
     category: "コーポレートサイト",
     description:
-      "山形県の米専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。",
+      "東北地方の米穀専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。",
     techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Vercel"],
     period: "2026年5月",
     siteUrl: "",
