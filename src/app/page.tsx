@@ -17,7 +17,7 @@ export default function HomePage() {
 
         <div className="relative max-w-5xl mx-auto px-6 text-center">
           <span className="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-8">
-            Web制作 / アプリ開発 / SNS運用
+            Web制作 / アプリ開発
           </span>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-8">
@@ -28,7 +28,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-600 leading-relaxed mb-12 max-w-2xl mx-auto">
-            Webサイト、アプリ、SNS運用。小さなチームだから動きが速い。<br />
+            Webサイト、アプリ開発。小さなチームだから動きが速い。<br />
             地方の事業者から個人まで、一緒に考えながら作ります。
           </p>
 
@@ -168,7 +168,7 @@ export default function HomePage() {
               <p className="text-slate-500">掲載している金額はあくまで参考です。ページ数、機能の複雑さ、納期などによって変わります。お見積りは無料です。</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {[
                 {
                   name: "LP制作",
@@ -185,14 +185,6 @@ export default function HomePage() {
                   period: "納期：2〜4週間",
                   items: ["5ページ以内", "レスポンシブ対応", "お問い合わせフォーム", "SEO・OGP設定", "サイトマップ生成"],
                   highlight: true,
-                },
-                {
-                  name: "SNS運用代行",
-                  price: "3万〜",
-                  unit: "円/月（税込）",
-                  period: "月10〜20投稿",
-                  items: ["X / Instagram対応", "投稿文・画像企画", "スケジュール管理", "月次レポート"],
-                  highlight: false,
                 },
               ].map((p) => (
                 <div key={p.name} className={`rounded-2xl p-8 border ${p.highlight ? "bg-gradient-to-br from-cyan-500 to-teal-600 text-white border-transparent shadow-xl shadow-cyan-300/40" : "bg-white text-slate-900 border-slate-200"}`}>
