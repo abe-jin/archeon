@@ -78,7 +78,7 @@ export default function SeitaiDemoPage() {
           <div className="hidden lg:block relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80"
+                src="https://images.pexels.com/photos/6628473/pexels-photo-6628473.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80"
                 alt="清潔感のある施術ベッド"
                 fill
                 className="object-cover"
@@ -360,19 +360,19 @@ export default function SeitaiDemoPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               {
-                src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
-                alt: "清潔感のある施術ベッド",
+                src: "https://images.pexels.com/photos/6899550/pexels-photo-6899550.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80",
+                alt: "モダンなサロン内装",
                 caption: "施術ルーム",
               },
               {
-                src: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
-                alt: "清潔な院内の様子",
-                caption: "院内のようす",
-              },
-              {
-                src: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&q=80",
+                src: "https://images.pexels.com/photos/6187653/pexels-photo-6187653.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80",
                 alt: "施術の手元",
                 caption: "丁寧な施術",
+              },
+              {
+                src: "https://images.pexels.com/photos/5619462/pexels-photo-5619462.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80",
+                alt: "クリニック設備",
+                caption: "院内設備",
               },
             ].map((item) => (
               <div key={item.alt} className="group">
