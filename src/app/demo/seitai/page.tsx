@@ -74,12 +74,12 @@ export default function SeitaiDemoPage() {
             </div>
           </div>
 
-          {/* 右カラム：施術写真（PCのみ表示） — 後から実際の施術写真に差し替えてください */}
+          {/* 右カラム：院内写真（PCのみ表示） — 後から実際の院内写真に差し替えてください */}
           <div className="hidden lg:block relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=800&q=80"
-                alt="丁寧な施術を行う院長"
+                src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80"
+                alt="清潔感のある施術ベッド"
                 fill
                 className="object-cover"
                 priority
@@ -257,15 +257,16 @@ export default function SeitaiDemoPage() {
       <section id="director" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* 院長写真 */}
+            {/* 院長プロフィール（写真なし・テキスト表現） */}
             <div className="flex justify-center">
-              <div className="relative w-full max-w-xs aspect-square rounded-3xl overflow-hidden shadow-xl">
-                <Image
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
-                  alt="院長 田中誠一"
-                  fill
-                  className="object-cover object-top"
-                />
+              <div className="relative w-full max-w-xs aspect-square rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-emerald-50 to-teal-50 flex flex-col items-center justify-center gap-4 px-8">
+                <span className="text-7xl">🌿</span>
+                <div className="text-center">
+                  <p className="text-stone-800 font-black text-lg">田中 誠一</p>
+                  <p className="text-emerald-600 text-sm font-medium mt-1">柔道整復師</p>
+                  <p className="text-emerald-600 text-sm font-medium">按摩マッサージ指圧師</p>
+                </div>
+                <p className="text-stone-400 text-xs text-center">仙台で15年の実績</p>
               </div>
             </div>
 
@@ -359,19 +360,19 @@ export default function SeitaiDemoPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               {
-                src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+                src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
                 alt: "清潔感のある施術ベッド",
                 caption: "施術ルーム",
               },
               {
-                src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-                alt: "施術を行う様子",
-                caption: "丁寧な施術",
+                src: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
+                alt: "清潔な院内の様子",
+                caption: "院内のようす",
               },
               {
-                src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
-                alt: "明るい待合室",
-                caption: "待合スペース",
+                src: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&q=80",
+                alt: "施術の手元",
+                caption: "丁寧な施術",
               },
             ].map((item) => (
               <div key={item.alt} className="group">
