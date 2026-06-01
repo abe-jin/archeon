@@ -35,11 +35,11 @@ export default function SeitaiDemoPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-stone-900 leading-tight mb-6">
             その痛み、
             <br />
-            <span className="text-emerald-600">もう我慢しなくていい。</span>
+            <span className="text-emerald-600">年齢のせいにしていませんか？</span>
           </h1>
 
           <p className="text-stone-600 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-            仙台で15年。肩こり・腰痛を根本から整えます。
+            仙台で15年。肩こり・腰痛の根っこから、一緒に向き合います。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -245,23 +245,23 @@ export default function SeitaiDemoPage() {
             {[
               {
                 num: "01",
-                title: "柔道整復師・按摩マッサージ指圧師が担当",
-                desc: "施術するのは国家資格を持つスタッフのみです。経歴や資格は院内に掲示しています。",
+                title: "国家資格者のみが施術します",
+                desc: "担当するのは、柔道整復師・按摩マッサージ指圧師の資格を持つスタッフだけ。院内に資格証を掲示していますので、いつでも確認できます。",
               },
               {
                 num: "02",
-                title: "なぜ痛むのか、一緒に確認します",
-                desc: "その日の症状を取るだけでなく、原因を一緒に考えてから施術に入ります。",
+                title: "完全予約制・待ち時間ゼロ",
+                desc: "あなたの時間のために予約制にしています。到着したらすぐ案内できるように準備していますよ。",
               },
               {
                 num: "03",
-                title: "LINE・電話・ネットで24時間予約できます",
-                desc: "当日の空き枠もご案内できます。まずお気軽に連絡してみてください。",
+                title: "なぜ痛むのかを、一緒に確認してから施術",
+                desc: "その日の症状を取るだけでは、また戻ってきます。原因を一緒に考えてから施術に入るのが、当院のやり方なんです。",
               },
               {
                 num: "04",
                 title: "カルテを毎回確認してから施術",
-                desc: "前回の状態を踏まえて施術します。「前より楽になってきた」を積み上げていきます。",
+                desc: "前回どうだったかを踏まえて施術します。「前より楽になってきた」を、ひとつひとつ積み上げていきましょう。",
               },
             ].map((f) => (
               <div
@@ -345,8 +345,11 @@ export default function SeitaiDemoPage() {
           <h2 className="text-3xl sm:text-4xl font-black mt-3 mb-4">
             まず話だけでも、ぜんぜんOKです。
           </h2>
+          <p className="text-white/80 leading-relaxed mb-6">
+            予約の際に症状を詳しく伝えなくても大丈夫です。来てから一緒に整理しましょう。無理な勧誘はしません。
+          </p>
           <p className="text-white/80 leading-relaxed mb-10">
-            「本当に良くなるのかな」と思っているなら、一度来てみてください。押し売りはしません。
+            「本当に良くなるのかな」と思っているなら、一度来てみてください。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
