@@ -106,9 +106,9 @@ const portfolioItems: PortfolioItem[] = [
     category: "コーポレートサイト",
     description:
       "東北地方の米穀専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。",
-    techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Vercel"],
+    techStack: ["Next.js 16", "React 19", "Tailwind CSS", "Vercel"],
     period: "2026年5月",
-    siteUrl: "",
+    siteUrl: "https://abe-beikoku.vercel.app",
     thumbnail: "",
     placeholderText: "米",
     placeholderBg: "bg-gradient-to-br from-amber-50 via-stone-100 to-stone-200",
