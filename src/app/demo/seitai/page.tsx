@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "東仙台整体院 | 肩こり・腰痛の整体・骨盤矯正",
@@ -27,47 +28,70 @@ export default function SeitaiDemoPage() {
         <div className="absolute top-24 right-0 w-72 h-72 bg-emerald-200/30 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 left-0 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-3xl mx-auto px-6 py-20 text-center">
-          <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold tracking-widest px-4 py-2 rounded-full mb-6">
-            仙台で15年。宮城県仙台市・東仙台
-          </span>
+        <div className="relative max-w-5xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* 左カラム：テキスト・CTA */}
+          <div>
+            <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold tracking-widest px-4 py-2 rounded-full mb-6">
+              仙台で15年。宮城県仙台市・東仙台
+            </span>
 
-          <h1 className="text-4xl sm:text-5xl font-black text-stone-900 leading-tight mb-6">
-            その痛み、
-            <br />
-            <span className="text-emerald-600">年齢のせいにしていませんか？</span>
-          </h1>
+            <h1 className="text-4xl sm:text-5xl font-black text-stone-900 leading-tight mb-6">
+              その痛み、
+              <br />
+              <span className="text-emerald-600">年齢のせいにしていませんか？</span>
+            </h1>
 
-          <p className="text-stone-600 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-            仙台で15年。肩こり・腰痛の根っこから、一緒に向き合います。
-          </p>
+            <p className="text-stone-600 text-lg leading-relaxed mb-10">
+              仙台で15年。肩こり・腰痛の根っこから、一緒に向き合います。
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-full shadow-lg shadow-emerald-200 transition-all hover:scale-105"
-            >
-              ✦ 無料相談を予約する
-            </a>
-            <a
-              href="#service"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-50 text-stone-700 font-semibold text-base px-8 py-4 rounded-full border border-stone-200 shadow-sm transition-all"
-            >
-              施術メニューを見る →
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-full shadow-lg shadow-emerald-200 transition-all hover:scale-105"
+              >
+                ✦ 無料相談を予約する
+              </a>
+              <a
+                href="#service"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-50 text-stone-700 font-semibold text-base px-8 py-4 rounded-full border border-stone-200 shadow-sm transition-all"
+              >
+                施術メニューを見る →
+              </a>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-3">
+              {["駐車場あり", "女性スタッフ在籍", "完全予約制", "JR陸前高砂駅 徒歩6分"].map(
+                (tag) => (
+                  <span
+                    key={tag}
+                    className="bg-white/80 text-stone-500 text-xs font-medium px-3 py-1.5 rounded-full border border-stone-100"
+                  >
+                    {tag}
+                  </span>
+                )
+              )}
+            </div>
           </div>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-3">
-            {["駐車場あり", "女性スタッフ在籍", "完全予約制", "JR陸前高砂駅 徒歩6分"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-white/80 text-stone-500 text-xs font-medium px-3 py-1.5 rounded-full border border-stone-100"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+          {/* 右カラム：施術写真（PCのみ表示） — 後から実際の施術写真に差し替えてください */}
+          <div className="hidden lg:block relative">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=800&q=80"
+                alt="丁寧な施術を行う院長"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* 写真下部のグラデーションオーバーレイ */}
+              <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent" />
+            </div>
+            {/* 写真に重ねる実績バッジ */}
+            <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg px-5 py-3">
+              <p className="text-emerald-600 font-black text-lg">15年</p>
+              <p className="text-stone-500 text-xs">仙台での実績</p>
+            </div>
           </div>
         </div>
       </section>
@@ -229,6 +253,47 @@ export default function SeitaiDemoPage() {
         </div>
       </section>
 
+      {/* ── Director ── 院長紹介セクション — 後から実際の院長写真に差し替えてください */}
+      <section id="director" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* 院長写真 */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-xs aspect-square rounded-3xl overflow-hidden shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
+                  alt="院長 田中誠一"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* 院長プロフィール */}
+            <div>
+              <span className="text-emerald-600 text-xs font-bold tracking-widest uppercase">
+                Director
+              </span>
+              <h2 className="text-3xl font-black text-stone-900 mt-3 mb-6">
+                院長より
+              </h2>
+              <p className="text-stone-600 leading-relaxed mb-4">
+                「痛みがあると、気力も下がります。一日でも早く、楽になってほしい。」
+              </p>
+              <p className="text-stone-500 text-sm leading-relaxed mb-6">
+                仙台でこの仕事を始めて15年。たくさんの方の体を診てきて気づいたのは、「痛みの原因は必ずある」ということです。検査で何も出なくても、体は正直に教えてくれます。一緒に原因を探しながら、根本から良くしていきましょう。
+              </p>
+              <div className="border-t border-stone-100 pt-4">
+                <p className="text-stone-800 font-black">田中 誠一（たなか せいいち）</p>
+                <p className="text-stone-400 text-sm mt-1">
+                  柔道整復師・按摩マッサージ指圧師 / 東仙台整体院 院長
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Features ── */}
       <section id="features" className="py-20 bg-gradient-to-br from-stone-900 to-stone-800 text-white">
         <div className="max-w-4xl mx-auto px-6">
@@ -273,6 +338,54 @@ export default function SeitaiDemoPage() {
                 </span>
                 <h3 className="font-black text-emerald-300 text-base mb-2">{f.title}</h3>
                 <p className="text-stone-300 text-sm leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Gallery ── 院内ギャラリー — 後から実際の院内写真に差し替えてください */}
+      <section id="gallery" className="py-20 bg-stone-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-emerald-600 text-xs font-bold tracking-widest uppercase">
+              Gallery
+            </span>
+            <h2 className="text-3xl font-black text-stone-900 mt-3">
+              院内のようす
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              {
+                src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+                alt: "清潔感のある施術ベッド",
+                caption: "施術ルーム",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+                alt: "施術を行う様子",
+                caption: "丁寧な施術",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+                alt: "明るい待合室",
+                caption: "待合スペース",
+              },
+            ].map((item) => (
+              <div key={item.alt} className="group">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="text-stone-500 text-sm text-center mt-2 font-medium">
+                  {item.caption}
+                </p>
               </div>
             ))}
           </div>
