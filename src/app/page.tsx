@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import AnimatedSection from "@/components/AnimatedSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import { Globe, Smartphone, Share2, CheckCircle, ArrowRight, Mail, MessageCircle } from "lucide-react";
 
 export default function HomePage() {
@@ -165,47 +166,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* ── Works ── */}
-      <AnimatedSection delay={100}>
-        <section id="works" className="py-24 bg-slate-50">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <span className="text-cyan-600 text-xs font-bold tracking-widest uppercase">Works</span>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 mb-4">
-                制作実績
-              </h2>
-            </div>
-
-            <div className="max-w-2xl mx-auto">
-              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                <div className="h-48 bg-gradient-to-br from-amber-50 via-stone-100 to-stone-200 flex items-center justify-center">
-                  <p className="text-9xl font-serif font-black text-stone-200">米</p>
-                </div>
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {["Next.js", "TypeScript", "Tailwind CSS"].map((t) => (
-                      <span key={t} className="text-xs font-semibold bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full border border-cyan-100">{t}</span>
-                    ))}
-                  </div>
-                  <h3 className="text-lg font-black text-slate-900 mb-2">
-                    有限会社阿部米穀 コーポレートサイト
-                  </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
-                    山形県の米専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。
-                  </p>
-                  <p className="text-xs text-slate-400 mt-3">※ 現在公開準備中</p>
-                </div>
-              </div>
-
-              <div className="mt-8 text-center bg-cyan-50 border border-cyan-100 rounded-2xl p-8">
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  実績は順次追加予定です。<br />
-                  詳細なポートフォリオはお問い合わせ時にお見せすることも可能です。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
+      <PortfolioSection />
 
       {/* ── Pricing ── */}
       <AnimatedSection delay={100}>
@@ -289,7 +250,7 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@archeon.jp" className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white text-cyan-700 font-bold text-base px-8 py-4 rounded-full hover:bg-cyan-50 transition-colors shadow-lg">
+            <a href="mailto:abejin0515@gmail.com" className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white text-cyan-700 font-bold text-base px-8 py-4 rounded-full hover:bg-cyan-50 transition-colors shadow-lg">
               <Mail className="w-5 h-5" />
               メールで相談
             </a>
