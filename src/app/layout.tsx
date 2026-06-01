@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL('https://archeon-seven.vercel.app'),
   title: "Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用",
-  description: "宮城・仙台のWeb制作会社Archeon（アーキオン）。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。",
+  description: "宮城・仙台のWeb制作のArcheon（アーキオン）。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。",
   openGraph: {
     title: 'Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用',
-    description: '宮城・仙台のWeb制作会社Archeon。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。',
+    description: '宮城・仙台のWeb制作のArcheon。コーポレートサイト・LP・アプリ開発をNext.js + AIで高品質・スピード納品。整体院・美容院・小規模事業者のホームページ制作はArcheonへ。',
     locale: 'ja_JP',
     type: 'website',
     url: 'https://archeon-seven.vercel.app',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Archeon（アーキオン） | 宮城のWeb制作・アプリ開発・SNS運用',
-    description: '宮城・仙台のWeb制作会社Archeon。Next.js + AIで高品質・スピード納品。',
+    description: '宮城・仙台のWeb制作のArcheon。Next.js + AIで高品質・スピード納品。',
   },
 };
 
