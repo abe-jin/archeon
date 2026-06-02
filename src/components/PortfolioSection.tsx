@@ -105,13 +105,27 @@ const portfolioItems: PortfolioItem[] = [
     industry: "米穀販売",
     category: "コーポレートサイト",
     description:
-      "東北地方の米穀専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。",
+      "東北地方の米穀専門店のコーポレートサイトをフルスクラッチで制作。8ページ構成・スクロールアニメーション・お問い合わせフォーム・SEO対応まで一括実装。（デザインデモ・伏字）",
     techStack: ["Next.js 16", "React 19", "Tailwind CSS", "Vercel"],
     period: "2026年5月",
-    siteUrl: "https://abe-beikoku.vercel.app",
+    siteUrl: "https://abe-beikoku-demo.vercel.app",
     thumbnail: "",
     placeholderText: "米",
     placeholderBg: "bg-gradient-to-br from-amber-50 via-stone-100 to-stone-200",
+  },
+  {
+    id: "wp-corporate-demo",
+    title: "コーポレートサイト（WordPress・デモ）",
+    industry: "IT・サービス",
+    category: "コーポレートサイト",
+    description:
+      "中小企業向けコーポレートサイトをWordPressオリジナルテーマでフルスクラッチ制作。TOP・事業内容・会社概要・代表挨拶・お問い合わせの5ページ構成。テーマサポート登録・メニュー登録・固定ページテンプレート・Contact Form 7対応フォーム・レスポンシブまで一括実装。デモは見た目確認用の静的プレビュー（実体はWordPressテーマ）。（架空・伏字）",
+    techStack: ["WordPress", "PHP", "HTML5", "CSS", "JavaScript"],
+    period: "2026年6月",
+    siteUrl: "https://wp-corporate-demo.vercel.app",
+    thumbnail: "",
+    placeholderText: "W",
+    placeholderBg: "bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-100",
   },
 ];
 
