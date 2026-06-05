@@ -127,6 +127,62 @@ const portfolioItems: PortfolioItem[] = [
     placeholderText: "W",
     placeholderBg: "bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-100",
   },
+  {
+    id: "cosmetics-3d",
+    title: "高級コスメブランドサイト 3D（デモ）",
+    industry: "コスメ・ビューティー",
+    category: "ブランドサイト / 3D",
+    description:
+      "React Three Fiber + Three.jsで3Dボトルをリアルタイムレンダリング。カスタムカーソル・グレインオーバーレイ・スムーススクロール・プリローダー・スクロール連動アニメーションを実装したイマーシブ体験型コスメブランドサイト。（デモ）",
+    techStack: ["Next.js", "React Three Fiber", "Three.js", "TypeScript", "Tailwind CSS"],
+    period: "2026年6月",
+    siteUrl: "https://cosmetics-3d-jnmsbuf5n-abejin0515-gmailcoms-projects.vercel.app",
+    thumbnail: "",
+    placeholderText: "✦",
+    placeholderBg: "bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-100",
+  },
+  {
+    id: "aurum-demo",
+    title: "ラグジュアリーブランドサイト AURUM（デモ）",
+    industry: "ラグジュアリー・高級品",
+    category: "ブランドサイト",
+    description:
+      "GSAPアニメーション・Lenisスムーススクロール・カスタムカーソルを組み合わせた、ラグジュアリーブランド向けフルページサイト。ルックブック・コレクション・マニフェストセクション構成。（デモ）",
+    techStack: ["Next.js", "TypeScript", "GSAP", "Lenis", "Tailwind CSS"],
+    period: "2026年6月",
+    siteUrl: "https://aurum-demo-qxgqe1bqg-abejin0515-gmailcoms-projects.vercel.app",
+    thumbnail: "",
+    placeholderText: "AU",
+    placeholderBg: "bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100",
+  },
+  {
+    id: "premium-brand-demo",
+    title: "プレミアムブランドサイト（デモ）",
+    industry: "ビューティー・プレミアム",
+    category: "ブランドサイト",
+    description:
+      "Framer Motionによるキネティックタイポグラフィ・青海波パターン・スクロール連動リビールアニメーションを実装したプレミアムブランドLP。コレクション・フィロソフィー・ギフト・お問い合わせ構成。（デモ）",
+    techStack: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
+    period: "2026年6月",
+    siteUrl: "https://premium-brand-demo-klbstturg-abejin0515-gmailcoms-projects.vercel.app",
+    thumbnail: "",
+    placeholderText: "◈",
+    placeholderBg: "bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-100",
+  },
+  {
+    id: "clinic-demo",
+    title: "クリニックサイト（デモ）",
+    industry: "医療・クリニック",
+    category: "コーポレートサイト",
+    description:
+      "医療クリニック向けコーポレートサイトデモ。診療案内・FAQ・お問い合わせを実装。スクロールアニメーション・医療免責事項バナー・レスポンシブ対応。Googleマップ営業の提案用として実際に使用。（架空・デモ）",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    period: "2026年6月",
+    siteUrl: "https://clinic-demo-4pgal57v1-abejin0515-gmailcoms-projects.vercel.app",
+    thumbnail: "",
+    placeholderText: "＋",
+    placeholderBg: "bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100",
+  },
 ];
 
 // ─── サブコンポーネント：カード ────────────────────────────
